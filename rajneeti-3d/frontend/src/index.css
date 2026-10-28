@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; margin: 0; overflow: hidden; background: #1d2340; font-family: 'Baloo 2', 'Trebuchet MS', system-ui, sans-serif; color: #1d2340; touch-action: none; user-select: none; -webkit-user-select: none; }
+canvas { outline: none; display: block; width: 100%; height: 100%; touch-action: none; }
+
+@layer components {
+  .btn { @apply rounded-game px-5 py-2 font-bold text-lg border-4 border-ink bg-paper text-ink shadow-[0_4px_0_#1d2340] transition active:translate-y-1 active:shadow-none disabled:opacity-40 disabled:pointer-events-none; min-height: 44px; }
+  .btn-primary { @apply bg-saffron; }
+  .panel { @apply rounded-game border-4 border-ink bg-paper p-5 shadow-[0_6px_0_#1d2340]; }
+  .chip { @apply rounded-full border-2 border-ink bg-paper px-3 py-1 font-bold text-sm; }
+}

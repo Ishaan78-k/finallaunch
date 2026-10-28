@@ -1,0 +1,12 @@
+export const TOTAL_MEMBERS = 300;
+export const TOTAL_CONSTITUENCIES = 180;
+export const MAJORITY_SEATS = 91;
+export const START_PARTY_FUNDS_CRORE = 50;
+export const START_POPULARITY = 35;
+export const DAYS_BEFORE_ELECTION = 180;
+export const SAVE_VERSION = 7;
+export const SAVE_SLOTS = ['slot1', 'slot2', 'slot3'] as const;
+export type SaveSlotId = (typeof SAVE_SLOTS)[number];
+export const CAMPAIGN_START_DAY = 91;
+export const ELECTION_DAY = 181;
+export const MINISTRIES = 12;
